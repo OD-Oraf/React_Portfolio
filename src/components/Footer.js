@@ -13,8 +13,8 @@ function Footer(){
                         OD-Oraf
                     </Col>
 
-                    <Col className="p-0" d-flex justify-content-end md={3}>
-                        Made by React.js
+                    <Col className="p-0" d-flex justify-content-end md={2}>
+                        Made with React-Bootstrap
                     </Col>
 
                 </Row>
