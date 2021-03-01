@@ -20,16 +20,16 @@ class App extends React.Component {
     this.state = {
       
       title: 'OD-Oraf',
-      // navbar
+      // Paths
       headerLinks: [
-        {title: 'Home' , path: '/'},
-        {title: 'About' , path: '/about'},
-        {title: 'Contact' , path: '/contact'},
+        {title: 'Home', path: '/'},
+        {title: 'About', path: '/about'},
+        {title: 'Contact', path: '/contact'},
       ],
       home:{
-        title: 'Be relentless',
-        subTitle: 'Projects that make a difference',
-        text: 'Checkout my projects below'
+        title: 'Learn by Doing',
+        subTitle: 'Build,Refine,Repeat',
+        text: 'View My Work Below'
       },
       about: {
         title: 'About me',       
@@ -46,31 +46,25 @@ class App extends React.Component {
       <div>
         <Router>
           <Container className = "p-0" fluid ={true}>
-
+            {/* Navbar */}
             <Navbar className = "border-bottom" bg= "transparent" expand= "lg">
               <Navbar.Brand> OD-Oraf </Navbar.Brand>
-
               <Navbar.Toggle className= "border-0" aria-controls= "navbar-toggle"/>
-
               <Navbar.Collapse id = "navbar-toggle">
                   <Nav className= "ml-auto">
                     {/* Link instead of anchor tag */}
                     <Link className= "nav-link" to="/"> Home </Link>
                     <Link className= "nav-link" to="/about"> About </Link>
-                    <Link className= "nav-link" to="/contact"> Contact </Link>
-
-                    
+                    <Link className= "nav-link" to="/contact"> Contact </Link>                   
                   </Nav>
-              </Navbar.Collapse>
-              
+              </Navbar.Collapse>            
               {/* </Navbar.Toggle> */}
-
             </Navbar>
 
             {/* Home Route */}
             <Route path="/" render={ () => 
             <HomePage title={this.state.home.title } 
-            subTitle = {this.state.home.title} 
+            subTitle = {this.state.home.subTitle} 
             text = {this.state.home.text} /> }/> 
 
             {/* About Route */}
@@ -85,7 +79,6 @@ class App extends React.Component {
             <Footer/>
 
           </Container>
-
         </Router>
 
       </div>
