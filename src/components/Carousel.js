@@ -81,6 +81,7 @@ class Carousel extends React.Component {
         }); 
     }
 
+    // Make Items meathod  
     makeItems = (items) => {
         return (
             items.map(item => {

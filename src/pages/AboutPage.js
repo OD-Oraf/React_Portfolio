@@ -1,10 +1,18 @@
 import React from 'react'; 
 
+// bootstrap imports   
+import Container from 'react-bootstrap/Container'; 
 
 function AboutPage(props){
 
     return(
-        <p> Home Works! </p>
+        <Container> 
+            <p> Home Works! </p> 
+            
+
+
+        </Container>
+        
     )
 }
 

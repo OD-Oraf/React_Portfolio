@@ -27,8 +27,8 @@ class App extends React.Component {
         {title: 'Contact', path: '/contact'},
       ],
       home:{
-        title: 'Learn by Doing',
-        subTitle: 'Build,Refine,Repeat',
+        title: 'Software Developer',
+        subTitle: 'Learn by Doing',
         text: 'View My Work Below'
       },
       about: {
@@ -62,14 +62,13 @@ class App extends React.Component {
             </Navbar>
 
             {/* Home Route */}
-            <Route path="/" render={ () => 
-            <HomePage title={this.state.home.title } 
-            subTitle = {this.state.home.subTitle} 
-            text = {this.state.home.text} /> }/> 
+            <Route path="/" exact render= { () => <HomePage title={this.state.home.title} 
+            subTitle={this.state.home.subTitle} 
+            text={this.state.home.text} /> } /> 
 
             {/* About Route */}
             <Route path="/about" render={ () => 
-            <AboutPage title={this.state.about.title } 
+            <AboutPage title={this.state.about.title} 
             /> }/> 
 
             {/* Contact Route */}

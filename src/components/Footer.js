@@ -14,7 +14,7 @@ function Footer(){
                     </Col>
 
                     <Col className="p-0" d-flex justify-content-end md={2}>
-                        Made with React-Bootstrap
+                        Built w/ React-Bootstrap 
                     </Col>
 
                 </Row>

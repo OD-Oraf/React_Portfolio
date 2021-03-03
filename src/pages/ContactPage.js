@@ -1,10 +1,15 @@
 import React from 'react'; 
 
+import Container from 'react-bootstrap/Container'; 
+
 
 function ContactPage(props){
 
     return(
-        <p> Home Works! </p>
+        <Container>
+            <p> Contact Works! </p>
+            
+        </Container>
     )
 }
 
