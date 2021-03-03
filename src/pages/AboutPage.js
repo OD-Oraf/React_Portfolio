@@ -19,7 +19,6 @@ function AboutPage(props){
                         Hello, My names OD and I currently work with full stack engineering using React and Django. 
                         In addition to practicing React/Django, I'm also learning NodeJS,ExpressJS and MongoDB. 
                     </p>
-
                     <p> 
                         In addition to full stack engineering, 
                         I also have experience with python in a data science setting performing tasks such as data cleaning and visualization.
