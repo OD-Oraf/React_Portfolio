@@ -8,8 +8,8 @@ import Row from 'react-bootstrap/Row'
 import Card from '../components/Card';
 
 // Image Imports  
-import devgrub from '../assets/images/devgrub.png'; 
-import lake from '../assets/images/lake.jpg'; 
+import TRVL from '../assets/images/TRVL.png'; 
+import BTRE from '../assets/images/BTRE.png'; 
 import mountain from '../assets/images/mountain.jpg'; 
 
 /* class x extends React.Component {
@@ -39,24 +39,24 @@ class Carousel extends React.Component {
                     id: 0,
                     title: 'Project 1',
                     subTitle: 'This is a description about project 1',
-                    imgSrc: devgrub, 
-                    link: 'https://www.google.com/',
+                    imgSrc: TRVL, 
+                    link: 'https://react-websitev1.herokuapp.com/',
                     selected: false
                 }, 
                 {
                     id: 1,
                     title: 'Project 2',
                     subTitle: 'This is a description about project 2',
-                    imgSrc: lake, 
-                    link: 'https://www.google.com/',
+                    imgSrc: BTRE, 
+                    link: "http://134.209.76.22",
                     selected: false 
                 },
                 {
                     id: 2,
                     title: 'Project 3',
                     subTitle: 'This is a description about project 3',
-                    imgSrc: mountain , 
-                    link: 'https://www.google.com/',
+                    imgSrc: mountain, 
+                    link: 'odoraf.com',
                     selected: false
                 },
             ]
@@ -81,7 +81,7 @@ class Carousel extends React.Component {
         }); 
     }
 
-    // Make Items meathod  
+    // Make Items method  
     makeItems = (items) => {
         return (
             items.map(item => {

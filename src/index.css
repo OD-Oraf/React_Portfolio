@@ -18,10 +18,14 @@ code {
 }
 
 .o-card-image {
+  /* display: block; */
+  /* margin-right: auto;  */
   border-radius: 10px;
   width: 300px;
   height: 480px;
   box-shadow: 0px 0px 3px 1px #ccc;
+  object-fit: cover; 
+  object-position: 0% 100%;
 }
 
 .o-card-info {
