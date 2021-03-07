@@ -1,7 +1,9 @@
 import React from 'react'; 
 
+// import From from 'react-bootstrap/Form'; 
 import Hero from '../components/Hero';
 import Content from '../components/Content';
+// import Axios from 'axios'; 
 // import Container from 'react-bootstrap/Container';  
 
 import Button from 'react-bootstrap/Button'
@@ -40,8 +42,10 @@ class ContactPage extends React.Component{
 
         this.setState({
             disabled: true,
-            emailSent: false, 
-        })
+            // emailSent: false, 
+        });
+
+        // Axois
     }
 
     render() {
