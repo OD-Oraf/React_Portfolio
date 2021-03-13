@@ -8,8 +8,8 @@ import Row from 'react-bootstrap/Row'
 import Card from '../components/Card';
 
 // Image Imports  
-import TRVL from '../assets/images/TRVL.png'; 
-import BTRE from '../assets/images/BTRE.png'; 
+import TRVL from '../assets/images/TRVL_card.png'; 
+import BTRE from '../assets/images/BTRE_card.png'; 
 import mountain from '../assets/images/mountain.jpg'; 
 
 /* class x extends React.Component {
@@ -37,16 +37,16 @@ class Carousel extends React.Component {
             items: [
                 {
                     id: 0,
-                    title: 'Project 1',
-                    subTitle: 'This is a description about project 1',
+                    title: 'TRVL',
+                    subTitle: 'Travel Site Mockup made in React',
                     imgSrc: TRVL, 
                     link: 'https://react-websitev1.herokuapp.com/',
                     selected: false
                 }, 
                 {
                     id: 1,
-                    title: 'Project 2',
-                    subTitle: 'This is a description about project 2',
+                    title: 'BT Real Estate',
+                    subTitle: 'Real Estate/Market place mockup made with Bootstrap-4, Django and PostgreSQL',
                     imgSrc: BTRE, 
                     link: "http://134.209.76.22",
                     selected: false 
