@@ -10,7 +10,7 @@ import Card from '../components/Card';
 // Image Imports  
 import TRVL from '../assets/images/TRVL_card.png'; 
 import BTRE from '../assets/images/BTRE_card.png'; 
-import mountain from '../assets/images/mountain.jpg'; 
+import ENOVE from '../assets/images/ENOVE_card.png'; 
 
 /* class x extends React.Component {
     constructor(props) {
@@ -37,12 +37,13 @@ class Carousel extends React.Component {
             items: [
                 {
                     id: 0,
-                    title: 'TRVL',
-                    subTitle: 'Travel Site Mockup made in React',
-                    imgSrc: TRVL, 
-                    link: 'https://react-websitev1.herokuapp.com/',
+                    title: 'Enove',
+                    subTitle: 'Demo built using React, Django w/ RestFramework,Postgresql',
+                    imgSrc: ENOVE, 
+                    link: 'https://enove.herokuapp.com/#/',
                     selected: false
-                }, 
+                },
+
                 {
                     id: 1,
                     title: 'BT Real Estate',
@@ -51,14 +52,17 @@ class Carousel extends React.Component {
                     link: "http://134.209.76.22",
                     selected: false 
                 },
+
                 {
                     id: 2,
-                    title: 'Project 3',
-                    subTitle: 'This is a description about project 3',
-                    imgSrc: mountain, 
-                    link: 'odoraf.com',
+                    title: 'TRVL',
+                    subTitle: 'Travel Site Mockup made in React',
+                    imgSrc: TRVL, 
+                    link: 'https://react-websitev1.herokuapp.com/',
                     selected: false
-                },
+                }, 
+                
+                
             ]
         }        
         }
