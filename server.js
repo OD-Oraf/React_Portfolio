@@ -17,8 +17,8 @@ var smtpConfig = {
     port: 465,
     secure: true, // use SSL
     auth: {
-        user: 'devonxora@gmail.com',
-        pass: 'Prototype1'
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
     }
 };
 var transporter = nodemailer.createTransport(smtpConfig);
