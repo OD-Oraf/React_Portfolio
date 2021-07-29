@@ -12,7 +12,7 @@ import './App.css';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
+import Contact from './pages/Contact';
 
 class App extends React.Component {
   constructor(props){
@@ -74,7 +74,7 @@ class App extends React.Component {
 
             {/* Contact Route */}
             <Route path="/contact" render={ () => 
-            <ContactPage title={this.state.contact.title } 
+            <Contact title={this.state.contact.title } 
              /> }/> 
             <Footer/>
 
