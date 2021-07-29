@@ -39,12 +39,10 @@ class ContactPage extends React.Component{
     // Prevent default behavior (refresh page) 
     handleSubmit = (event) => {
         event.preventDefault(); 
-
         this.setState({
             disabled: true,
             // emailSent: false, 
         });
-
         // Axois
     }
 

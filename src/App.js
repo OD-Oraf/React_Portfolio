@@ -26,6 +26,7 @@ class App extends React.Component {
         {title: 'About', path: '/about'},
         {title: 'Contact', path: '/contact'},
       ],
+
       home:{
         title: 'Full Stack Engineer', 
         subTitle: 'React/Django',
@@ -35,7 +36,7 @@ class App extends React.Component {
         title: 'About me',       
       },
       contact: {
-        title: 'Contact Me ',
+        title: 'Contact Me',
         
       }
     }

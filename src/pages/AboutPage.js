@@ -25,7 +25,7 @@ function AboutPage(props){
                     </p>
 
                     <p> 
-                        Currently I'm working on an E-Commerce web for a new watch company, which is being developed using React and Django
+                        Currently I'm working on an E-Commerce web-application for a new watch company, which is being developed using React and Django
                     </p>
                 </Content>
             </div>

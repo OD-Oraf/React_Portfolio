@@ -38,7 +38,7 @@ class Carousel extends React.Component {
                 {
                     id: 0,
                     title: 'Enove',
-                    subTitle: 'Demo built using React, Django w/ RestFramework,Postgresql',
+                    subTitle: 'Demo built using React, Django w/ RestFramework,Postgresql. Please wait about a minute for load time as Im using free hosting.',
                     imgSrc: ENOVE, 
                     link: 'https://enove.herokuapp.com/#/',
                     selected: false
@@ -47,7 +47,7 @@ class Carousel extends React.Component {
                 {
                     id: 1,
                     title: 'BT Real Estate',
-                    subTitle: 'Real Estate/Market place mockup made with Bootstrap-4, Django and PostgreSQL',
+                    subTitle: 'Real Estate/Market place mockup made with Bootstrap-4, Django and PostgreSQL. Please wait about a minute for load time as Im using free hosting.',
                     imgSrc: BTRE, 
                     link: "http://134.209.76.22",
                     selected: false 
