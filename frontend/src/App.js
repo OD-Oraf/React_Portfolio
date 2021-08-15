@@ -2,7 +2,7 @@
 
 // React and Bootstrap Inports
 import React from 'react';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {HashRouter as Router, Route, Link} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -19,7 +19,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       
-      title: 'OD-Oraf',
+      title: 'Ooduah Orafidiya',
       // Paths
       headerLinks: [
         {title: 'Home', path: '/'},
@@ -28,8 +28,8 @@ class App extends React.Component {
       ],
 
       home:{
-        title: 'Full Stack Engineer', 
-        subTitle: 'React/Django',
+        title: 'Ooduah Orafidiya ', 
+        subTitle: 'Software Engineer',
         text: 'View My Work Below'
       },
       about: {
@@ -76,9 +76,10 @@ class App extends React.Component {
             <Route path="/contact" render={ () => 
             <Contact title={this.state.contact.title } 
              /> }/> 
-            <Footer/>
 
           </Container>
+          <Footer/>
+
         </Router>
 
       </div>

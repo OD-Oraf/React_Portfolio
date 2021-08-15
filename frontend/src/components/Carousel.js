@@ -8,9 +8,10 @@ import Row from 'react-bootstrap/Row'
 import Card from '../components/Card';
 
 // Image Imports  
-import TRVL from '../assets/images/TRVL_card.png'; 
+// import TRVL from '../assets/images/TRVL_card.png'; 
 import BTRE from '../assets/images/BTRE_card.png'; 
 import ENOVE from '../assets/images/ENOVE_card.png'; 
+import ORB from '../assets/images/Resume_Builder_card.png';
 
 /* class x extends React.Component {
     constructor(props) {
@@ -37,6 +38,15 @@ class Carousel extends React.Component {
             items: [
                 {
                     id: 0,
+                    title: 'ORB-(Od\'s Resume Builder)',
+                    subTitle: 'Application to enter and information and format resume into one of 3 templates',
+                    imgSrc: ORB, 
+                    link: 'http://resume-portal.us-west-2.elasticbeanstalk.com/',
+                    selected: false
+                },
+
+                {
+                    id: 1,
                     title: 'Enove',
                     subTitle: 'Demo built using React, Django w/ RestFramework,Postgresql. Please wait about a minute for load time as Im using free hosting.',
                     imgSrc: ENOVE, 
@@ -45,7 +55,7 @@ class Carousel extends React.Component {
                 },
 
                 {
-                    id: 1,
+                    id: 2,
                     title: 'BT Real Estate',
                     subTitle: 'Real Estate/Market place mockup made with Bootstrap-4, Django and PostgreSQL. Please wait about a minute for load time as Im using free hosting.',
                     imgSrc: BTRE, 
@@ -53,14 +63,16 @@ class Carousel extends React.Component {
                     selected: false 
                 },
 
-                {
-                    id: 2,
-                    title: 'TRVL',
-                    subTitle: 'Travel Site Mockup made in React',
-                    imgSrc: TRVL, 
-                    link: 'https://react-websitev1.herokuapp.com/',
-                    selected: false
-                }, 
+                // {
+                //     id: 2,
+                //     title: 'TRVL',
+                //     subTitle: 'Travel Site Mockup made in React',
+                //     imgSrc: TRVL, 
+                //     link: 'https://react-websitev1.herokuapp.com/',
+                //     selected: false
+                // }, 
+
+                 
                 
                 
             ]
