@@ -16,8 +16,8 @@ function AboutPage(props){
 
                 <Content>
                     <p> 
-                        Hello, My names OD and I currently work with full stack engineering using React and Django. 
-                        In addition to practicing React/Django, I'm also learning NodeJS,ExpressJS and MongoDB. 
+                        Hello, My names Ooduah Orafidiya, OD for short, and I am a software engineer specialized in full stack development using Java(Spring/Spring Boot), JavaScript React(JavaScript) and Python(Django). 
+                        For my applications I tend to use postgresql.   
                     </p>
                     <p> 
                         In addition to full stack engineering, 

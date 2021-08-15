@@ -39,7 +39,7 @@ class Carousel extends React.Component {
                 {
                     id: 0,
                     title: 'ORB-(Od\'s Resume Builder)',
-                    subTitle: 'Application to enter and information and format resume into one of 3 templates',
+                    subTitle: ' Resume Builder application designed to make creating resumes simpler with the choice of various templates',
                     imgSrc: ORB, 
                     link: 'http://resume-portal.us-west-2.elasticbeanstalk.com/',
                     selected: false
@@ -48,7 +48,7 @@ class Carousel extends React.Component {
                 {
                     id: 1,
                     title: 'Enove',
-                    subTitle: 'Demo built using React, Django w/ RestFramework,Postgresql. Please wait about a minute for load time as Im using free hosting.',
+                    subTitle: 'Ecommerce demo with user registration and cart functionality. Also has a basic admin dashboard. Please wait about a minute for load time as Im using free hosting.',
                     imgSrc: ENOVE, 
                     link: 'https://enove.herokuapp.com/#/',
                     selected: false
@@ -57,7 +57,7 @@ class Carousel extends React.Component {
                 {
                     id: 2,
                     title: 'BT Real Estate',
-                    subTitle: 'Real Estate/Market place mockup made with Bootstrap-4, Django and PostgreSQL. Please wait about a minute for load time as Im using free hosting.',
+                    subTitle: 'Real Estate application mockup. Features user registration and basic admin dashboard. Please wait about a minute for load time as Im using free hosting.',
                     imgSrc: BTRE, 
                     link: "http://134.209.76.22",
                     selected: false 
