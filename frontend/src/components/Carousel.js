@@ -13,24 +13,6 @@ import BTRE from '../assets/images/BTRE_card.png';
 import ENOVE from '../assets/images/ENOVE_card.png'; 
 import ORB from '../assets/images/Resume_Builder_card.png';
 
-/* class x extends React.Component {
-    constructor(props) {
-        super(props); 
-        this.state = {
-            array of objects
-            arr: [
-                {obj 1}
-                {obj 2}
-                {obj 3}
-
-            ]
-        }
-    }
-}
-
-
-*/
-
 class Carousel extends React.Component {
     constructor(props) {
         super(props);
@@ -39,7 +21,7 @@ class Carousel extends React.Component {
                 {
                     id: 0,
                     title: 'ORB-(Od\'s Resume Builder)',
-                    subTitle: ' Resume Builder application designed to make creating resumes simpler with the choice of various templates',
+                    subTitle: ' Resume Builder application designed to make creating resumes easier with the choice of various templates',
                     imgSrc: ORB, 
                     link: 'http://resume-portal.us-west-2.elasticbeanstalk.com/',
                     selected: false
@@ -52,15 +34,6 @@ class Carousel extends React.Component {
                     imgSrc: ENOVE, 
                     link: 'https://enove.herokuapp.com/#/',
                     selected: false
-                },
-
-                {
-                    id: 2,
-                    title: 'BT Real Estate',
-                    subTitle: 'Real Estate application mockup. Features user registration and basic admin dashboard. Please wait about a minute for load time as Im using free hosting.',
-                    imgSrc: BTRE, 
-                    link: "http://134.209.76.22",
-                    selected: false 
                 },
 
                 // {
