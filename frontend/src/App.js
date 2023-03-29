@@ -15,7 +15,7 @@ import AboutPage from './pages/AboutPage';
 import Contact from './pages/Contact';
 
 class App extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       
