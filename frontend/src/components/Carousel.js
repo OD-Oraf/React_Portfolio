@@ -34,20 +34,7 @@ class Carousel extends React.Component {
                     imgSrc: ENOVE, 
                     link: 'https://enove.herokuapp.com/#/',
                     selected: false
-                },
-
-                // {
-                //     id: 2,
-                //     title: 'TRVL',
-                //     subTitle: 'Travel Site Mockup made in React',
-                //     imgSrc: TRVL, 
-                //     link: 'https://react-websitev1.herokuapp.com/',
-                //     selected: false
-                // }, 
-
-                 
-                
-                
+                }
             ]
         }        
         }
