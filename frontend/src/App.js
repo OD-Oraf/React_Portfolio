@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 
 // React and Bootstrap Inports
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {HashRouter as Router, Route, Link} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
@@ -14,80 +14,76 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import Contact from './pages/Contact';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      
-      title: 'Ooduah Orafidiya',
-      // Paths
-      headerLinks: [
-        {title: 'Home', path: '/'},
-        {title: 'About', path: '/about'},
-        {title: 'Contact', path: '/contact'},
-      ],
+const App = () => {
+    const [name, setName] = useState("OD Orafidya")
 
-      home:{
-        title: 'Ooduah Orafidiya ', 
-        subTitle: 'Software Engineer',
-        text: 'View My Work Below'
-      },
-      about: {
-        title: 'About me',       
-      },
-      contact: {
-        title: 'Contact Me',
-        
-      }
-    }
-  }
-  render(){
+    const [headerLinks, setHeaderLinks] = useState({
+        title: "OD Orafidya",
+        links: [
+            {title: "Home", path: "/"},
+            {title: "About", path: "/about"},
+            {title: "Contact", path: "/contact"},
+        ]
+    })
+    const [home, setHom] = useState({
+        title: "OD Orafidya",
+        subTitle: "Software Engineer",
+        text: "View My Work Below"
+    })
+    const [about, setAbout] = useState({
+        title: "OD Orafidya",
+        subTitle: "Software Engineer",
+        text: "View My Work Below"
+    })
+    const [contact, setContact] = useState({
+        title: "OD Orafidya",
+        subTitle: "Software Engineer",
+        text: "View My Work Below"
+    })
+
     return (
+        <div>
+            <Router>
+                <Container className="p-0" fluid={true}>
+                    {/* Navbar */}
+                    <Navbar className="border-bottom" bg="transparent" expand="lg">
+                        <Navbar.Brand> OD-Oraf </Navbar.Brand>
+                        <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
+                        <Navbar.Collapse id="navbar-toggle">
+                            <Nav className="ml-auto">
+                                {/* Link instead of anchor tag */}
+                                <Link className="nav-link" to="/"> Home </Link>
+                                <Link className="nav-link" to="/about"> About </Link>
+                                <Link className="nav-link" to="/contact"> Contact </Link>
+                            </Nav>
+                        </Navbar.Collapse>
+                        {/* </Navbar.Toggle> */}
+                    </Navbar>
 
-      <div>
-        <Router>
-          <Container className = "p-0" fluid ={true}>
-            {/* Navbar */}
-            <Navbar className = "border-bottom" bg= "transparent" expand= "lg">
-              <Navbar.Brand> OD-Oraf </Navbar.Brand>
-              <Navbar.Toggle className= "border-0" aria-controls= "navbar-toggle"/>
-              <Navbar.Collapse id = "navbar-toggle">
-                  <Nav className= "ml-auto">
-                    {/* Link instead of anchor tag */}
-                    <Link className= "nav-link" to="/"> Home </Link>
-                    <Link className= "nav-link" to="/about"> About </Link>
-                    <Link className= "nav-link" to="/contact"> Contact </Link>                   
-                  </Nav>
-              </Navbar.Collapse>            
-              {/* </Navbar.Toggle> */}
-            </Navbar>
+                    {/* Home Route */}
+                    <Route path="/" exact render={() => <HomePage title={home.title}
+                                                                  subTitle={home.subTitle}
+                                                                  text={home.text}/>}/>
 
-            {/* Home Route */}
-            <Route path="/" exact render= { () => <HomePage title={this.state.home.title} 
-            subTitle={this.state.home.subTitle} 
-            text={this.state.home.text} /> } /> 
+                    {/* About Route */}
+                    <Route path="/about" render={() =>
+                        <AboutPage title={about.title}
+                        />}/>
 
-            {/* About Route */}
-            <Route path="/about" render={ () => 
-            <AboutPage title={this.state.about.title} 
-            /> }/> 
+                    {/* Contact Route */}
+                    <Route path="/contact" render={() =>
+                        <Contact title={contact.title}
+                        />}/>
 
-            {/* Contact Route */}
-            <Route path="/contact" render={ () => 
-            <Contact title={this.state.contact.title } 
-             /> }/> 
+                </Container>
+                <Footer/>
 
-          </Container>
-          <Footer/>
+            </Router>
 
-        </Router>
+        </div>
 
-      </div>
-    
-      );
+    );
 
-  }
-  
 }
 
 export default App;

@@ -16,7 +16,7 @@ function AboutPage(props){
 
                 <Content>
                     <p> 
-                        Hello, My names Ooduah Orafidiya, OD for short, and I am a software engineer specialized in full stack development using Java(Spring/Spring Boot), JavaScript React(JavaScript) and Python(Django). 
+                        Hello, My namee is {}. I am a software engineer specialized in full stack development using Java(Spring/Spring Boot), JavaScript React(JavaScript) and Python(Django).
                         For my applications I tend to use postgresql.   
                     </p>
                     <p> 
