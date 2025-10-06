@@ -14,32 +14,33 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import Contact from './pages/Contact';
 
-const App = () => {
-    const [name, setName] = useState("OD Orafidya")
+// Type definitions
+interface HeaderLink {
+    title: string;
+    path: string;
+}
 
-    const [headerLinks, setHeaderLinks] = useState({
-        title: "OD Orafidya",
-        links: [
-            {title: "Home", path: "/"},
-            {title: "About", path: "/about"},
-            {title: "Contact", path: "/contact"},
-        ]
-    })
-    const [home, setHom] = useState({
-        title: "OD Orafidya",
+interface PageState {
+    title: string;
+    subTitle?: string;
+    text?: string;
+}
+
+const App = () => {
+    const [home, setHome] = useState<PageState>({
+        title: "OD Orafidiya",
         subTitle: "Software Engineer",
         text: "View My Work Below"
-    })
-    const [about, setAbout] = useState({
-        title: "OD Orafidya",
-        subTitle: "Software Engineer",
-        text: "View My Work Below"
-    })
-    const [contact, setContact] = useState({
-        title: "OD Orafidya",
-        subTitle: "Software Engineer",
-        text: "View My Work Below"
-    })
+    });
+
+    const [about, setAbout] = useState<PageState>({
+        title: "About me"
+    });
+
+    const [contact, setContact] = useState<PageState>({
+        title: "Contact Me"
+    });
+
 
     return (
         <div>
@@ -72,7 +73,7 @@ const App = () => {
 
                     {/* Contact Route */}
                     <Route path="/contact" render={() =>
-                        <Contact title={contact.title}
+                        <Contact name={contact.title}
                         />}/>
 
                 </Container>

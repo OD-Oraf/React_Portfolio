@@ -1,16 +1,17 @@
 import React,{useState} from 'react'; 
 import Content from '../components/Content' ; 
 
-const Contact  = ()=>{
+const Contact  = (props) => {
     const [send, setSend] = useState(false)
     const [name,setName] = useState("")
     const [email,setEmail] = useState("")
     const [message,setMessage] = useState("")
     const [subject,setSubject] = useState("")
+    const [title,setTitle] = useState("")
     const postData = () =>{
         fetch("/send",{
             method:"post",
-            headers:{
+            headers: {
                 "Content-Type":"application/json"
             },
             body:JSON.stringify({
